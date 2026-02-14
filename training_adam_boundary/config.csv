@@ -1,0 +1,2 @@
+img_size,batch_size,epochs,lr,weight_decay,num_workers,drop_out,early_stop_patience,comment
+768,32,30,0.0001,0.005,4,0.3,4,"changed optimizer to adamw and loss to sigmod focal , higher epoch and bounday loss"

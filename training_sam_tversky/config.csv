@@ -1,0 +1,2 @@
+img_size,batch_size,epochs,lr,weight_decay,num_workers,early_stop_patience,comment
+768,6,30,5e-05,0.0001,4,5,Improved Text-SAM Stable
