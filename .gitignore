@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environments
+.env
+.venv
+venv/
+env/
+conda/
+*.conda
+
+# Conda
+environment.yml
+*.condarc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+
+*.pth
+*.pt
+checkpoints/
+training_*/
+
