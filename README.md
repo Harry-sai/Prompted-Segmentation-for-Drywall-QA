@@ -204,3 +204,10 @@ python predictions_deeplab.py
 ```
 python prediction_SAM.py
 ```
+
+### Data source
+`Dataset 1 (Taping area):`
+https://universe.roboflow.com/objectdetect-pu6rn/drywall-join-detect
+
+`Dataset 2 (Cracks):` 
+https://universe.roboflow.com/fyp-ny1jt/cracks-3ii36
