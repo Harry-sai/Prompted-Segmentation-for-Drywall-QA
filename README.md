@@ -81,6 +81,43 @@ Each mask:
 
 ---
 
+## Training Scripts
+
+## `training_deeplab.py`
+
+Training script for the **DeepLabV3 + CLIP** prompt-conditioned model.
+
+This script:
+
+* Builds the DeepLabV3-ResNet50 backbone
+* Integrates CLIP text embedding for prompt conditioning
+* Applies text–feature fusion inside the segmentation pipeline
+* Trains using Focal + Dice (+ Boundary) loss
+* Logs per-epoch IoU and Dice (crack & taping separately)
+* Saves best model checkpoints
+* Generates training metric plots
+
+Supports staged backbone freezing and multi-GPU training (DataParallel).
+
+---
+
+## `training_sam.py`
+
+Training script for the **SAM (ViT-B) + CLIP** text-conditioned model.
+
+This script:
+
+* Loads SAM backbone
+* Projects CLIP text embedding into SAM token space
+* Injects prompt embedding into the mask decoder
+* Fine-tunes the decoder while freezing most of the image encoder
+* Logs training & validation metrics
+* Saves checkpoints and evaluation plots
+
+Designed for higher-resolution training compared to DeepLab.
+
+---
+
 ## 📁 predictions/
 
 Contains inference outputs from both models.
