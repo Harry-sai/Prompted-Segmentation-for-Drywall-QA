@@ -47,6 +47,18 @@ Prompted-Segmentation-for-Drywall-QA/
 
 ```
 
+## 📁 data/
+
+Contains **original downloaded datasets from Roboflow**.
+
+```
+data/
+ ├── crack/     → Original crack dataset
+ └── tapping/   → Original taping dataset
+```
+
+These folders include raw images and original annotations before mask generation.
+
 ## 📁 train_labelled / val_labelled / test_labelled
 
 These are the **combined and processed datasets** used for training and evaluation.
